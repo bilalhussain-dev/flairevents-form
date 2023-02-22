@@ -1,0 +1,281 @@
+<%= form_for event, url: '#', html: {id: form_id, class: 'record-details-form booking-form', autocomplete: 'off'}, skip_default_ids: true do |f| %>
+  <table>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">
+        <span class="mandatory">Clients:</span>
+      </td>
+      <td>
+        <select class="form-control" multiple="<%= true %>" name="event_clients[]"></select>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Current Client:</td>
+      <td>
+        <select class="form-control" name="booking[client_id]"></select>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Officer Name:</td>
+      <td>
+        <%= _text_field 'officer_name',  readonly: 'readonly',   class: 'form-control' %>
+      </td>
+    </tr>
+  </table>
+  <hr/>
+  <table class="booking-fields">
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Contact</td>
+      <td>
+        <%= _select 'client_contact[id]', '', class: 'form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">First Name:</td>
+      <td>
+        <%= _text_field 'client_contact[first_name]', readonly: 'readonly', class: 'form-control' %>
+      </td>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Last Name:</td>
+      <td>
+        <%= _text_field 'client_contact[last_name]', readonly: 'readonly', class: 'form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Contact Tel:</td>
+      <td>
+        <%= _text_field 'client_contact[mobile_no]', readonly: 'readonly', class: 'form-control' %>
+      </td>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Contact Email:</td>
+      <td>
+        <%= _text_field 'client_contact[email]', readonly: 'readonly', class: 'form-control' %>
+      </td>
+    </tr>
+  </table>
+  <hr/>
+  <table class="booking-fields">
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Date Sent:</td>
+      <td>
+        <%= _date_field 'booking[date_sent]', class: 'form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Date Received:</td>
+      <td>
+        <%= _date_field 'booking[date_received]', class: 'form-control' %>
+      </td>
+    </tr>
+  </table>
+  <hr/>
+  <table class="booking-update-email-fields">
+    <tr class="hidden">
+      <td>Status:</td>
+      <td>
+        <%= f.select :status, [] %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">
+        <span class="mandatory">Public Name:</span>
+      </td>
+      <td colspan="3">
+        <%= _text_field 'event[display_name]', class: 'wide-text form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Address:</td>
+      <td colspan="3">
+        <%= _text_field 'event[address]', class: 'wide-text form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Post Code:</td>
+      <td colspan="3">
+        <%= _text_field 'event[post_code]', class: 'wide-text form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Location:</td>
+      <td colspan="3">
+        <%= _text_field 'event[location]', class: 'wide-text form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="mandatory">Start Date:</span>
+      </td>
+      <td>
+        <%= _date_field 'event[date_start]', size: 19, class: 'form-control' %>
+      </td>
+      <td>
+        <span class="mandatory">End Date:</span>
+      </td>
+      <td>
+        <%= _date_field 'event[date_end]', size: 19, class: 'form-control' %>
+      </td>
+    </tr>
+  </table>
+  <hr/>
+  <table class="booking-fields booking-update-email-fields">
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Dates:</td>
+      <td>
+        <%= _text_area 'booking[dates]', rows: 1, style: "width: 500px;", class: 'form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Timings:</td>
+      <td>
+        <%= _text_area 'booking[timings]', rows: 1, style: "width: 500px;", class: 'form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Crew Required:</td>
+      <td>
+        <%= _text_area 'booking[crew_required]', rows: 1, style: "width: 500px;", class: 'form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Job Summary:</td>
+      <td>
+        <%= _text_area 'booking[job_description]', rows: 1, style: "width: 500px;", class: 'form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Event Description:</td>
+      <td>
+        <%= _text_area 'booking[event_description]', rows: 1, style: "width: 500px;", class: 'form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Selling Points:</td>
+      <td>
+        <%= _text_area 'booking[selling_points]', rows: 1, style: "width: 500px;", class: 'form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Staff Qualities:</td>
+      <td>
+        <%= _text_area 'booking[staff_qualities]', rows: 1, style: "width: 500px;", class: 'form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Uniform:</td>
+      <td>
+        <%= _text_area 'booking[uniform]', rows: 1, style: "width: 500px;", class: 'form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Food:</td>
+      <td>
+        <%= _text_area 'booking[food]', rows: 1, style: "width: 500px;", class: 'form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Food:</td>
+      <td>
+        <%= _text_area 'booking[food]',  rows: 1, style: "width: 500px;", class: 'wide-text form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Breaks:</td>
+      <td>
+        <%= _text_area 'booking[breaks]',  rows: 1, style: "width: 500px;", class: 'wide-text form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Transport:</td>
+      <td>
+        <%= _text_area 'booking[transport]',  rows: 1, style: "width: 500px;", class: 'wide-text form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Meeting Location:</td>
+      <td>
+        <%= _text_area 'booking[meeting_location]',  rows: 1, style: "width: 500px;", class: 'wide-text form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <% if current_user.manager? %>
+      <tr>
+        <td class="label-column" style="width: 100px; font-weight: bold;">Rates:</td>
+        <td>
+          <%= _text_area 'booking[rates]',  rows: 1, style: "width: 500px;",class: 'wide-text form-control', spellcheck: true %>
+        </td>
+      </tr>
+    <% end %>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Wages:</td>
+      <td>
+        <%= _text_area 'booking[wages]',  rows: 1, style: "width: 500px;",class: 'wide-text form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Payment Due:</td>
+      <td>
+        <%= _select 'booking[terms]', options_for_select(['','7','14','21','30'], ''), style: "width: 500px;",class: 'form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Invoicing:</td>
+      <td>
+        <%= _text_area 'booking[invoicing]',  rows: 1, style: "width: 500px;",class: 'wide-text form-control', spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">PO#:</td>
+      <td>
+        <%= _text_area 'booking[po_details]',  rows: 1, style: "width: 500px;",class: 'wide-text form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Timesheets:</td>
+      <td>
+        <%= _text_area 'booking[timesheets]',  rows: 1, class: 'wide-text form-control', style: "width: 500px;",spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Paid Breaks:</td>
+      <td>
+        <%= _check_box 'booking[paid_breaks]',style: "width: 500px;", class: 'form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Min Hrs:</td>
+      <td>
+        <%= _select 'booking[minimum_hours]', options_for_select(['','4','5','6','7','8','10','Set'], ''),style: "width: 500px;", class: 'form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Health/Safety:</td>
+      <td>
+        <%= _select 'booking[health_safety_template]', options_for_select(['','Indoor Corporate/Promotional','Indoor Music/Hospitality','Indoor Sport','Outdoor Music/Hospitality','Outdoor Sport/Promotional'], ''), style: "width: 500px;",class: 'form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;"></td>
+      <td>
+        <%= _text_area 'booking[health_safety]',  rows: 1, class: 'wide-text form-control',style: "width: 500px;", spellcheck: true %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Any Other Information:</td>
+      <td>
+        <%= _text_area 'booking[any_other_information]', rows: 1, class: 'wide-text form-control',style: "width: 500px;", spellcheck: true %>
+      </td>
+    </tr>
+  </table>
+  <hr/>
+  <table class="booking-fields">
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Office Notes:</td>
+      <td>
+        <%= _text_area 'booking[office_notes]',  rows: 1,style: "width: 500px;", class: 'wide-text form-control' %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-column" style="width: 100px; font-weight: bold;">Amendments:</td>
+      <td>
+        <%= _text_area 'booking[amendments]',  rows: 1, class: 'wide-text form-control', style: "width: 500px;",readonly: 'readonly' %>
+      </td>
+    </tr>
+  </table>
+<% end %>
