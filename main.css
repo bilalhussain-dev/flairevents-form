@@ -335,7 +335,13 @@ input::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
 }
+
+.input-boxes-row input[type="number"] {
+  width: 100px;
+}
+
 .single-row {
   margin: 5px 0;
 }
