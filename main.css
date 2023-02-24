@@ -231,7 +231,7 @@ input::placeholder {
 }
 .lable-text {
   margin-right: 10px;
-  color: #999;
+  color: #646464 !important;
 }
 .container-check {
   display: block;
@@ -331,6 +331,18 @@ input::placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
 
+}
+
+.input__radios label {
+  color: #646464 !important;
+}
+
+.block-input label {
+  color: #646464 !important;
+}
+
+.form__events  {
+  color: #646464 !important;
 }
 
 .input-boxes-row input[type="number"] {
