@@ -516,6 +516,7 @@ display: flex;
 
 .grid-item-1 {
   border-right: 1px solid #eee;
+  padding: 10px;
 }
 .grid-item-2{
   padding: 10px;
@@ -571,6 +572,8 @@ display: flex;
   object-fit: cover;
   border: 2px solid #1EA1A1;
   padding: 5px;
+  height: 200px;
+  width: 200px;
 }
 
 .profile__secondary--info p a {
