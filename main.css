@@ -957,6 +957,10 @@ display: flex;
   color: #98cece;
 }
 
+.active-tag {
+  color: #777;
+}
+
 .flex-wrapper-fx {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1075,6 +1079,79 @@ display: flex;
   width: 70%;
   margin-top:20px ;
 }
+.form__grid .hs-input-fx {
+  margin-bottom: 10px;
+}
+
+
+.grid-max-fx {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 150px 150px 700px 100px 100px;
+  grid-gap: 20px;
+  padding: 10px 10px;
+  background-color: #eee;
+}
+
+
+
+i.remove-item {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  color: white;
+}
+
+
+
+
+ /* Table styles */
+ table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #212529;
+  margin-top: 20px;
+}
+th,
+td {
+  padding: 0.75rem;
+  vertical-align: middle;
+  text-align: left;
+  border-top: 1px solid #dee2e6;
+}
+th {
+  background-color: #f7f7f794;
+  font-weight: 200;
+  color: #333;
+}
+th:last-child,
+td:last-child {
+  text-align: left;
+}
+input {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+input:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
 /* ****************************************************
 ***************** EMPLOYEE EVENTS => PROFILE PAGE  END ***
 ******************************************************/
