@@ -876,7 +876,7 @@ display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 50px;
+  margin-top: 25px;
   width: 70%;
   border-bottom: 1px solid #eee;
   padding-bottom: 20px;
@@ -1077,7 +1077,7 @@ display: flex;
 
 .form__grid {
   width: 70%;
-  margin-top:20px ;
+  margin-top:0px ;
 }
 .form__grid .hs-input-fx {
   margin-bottom: 10px;
@@ -1116,11 +1116,11 @@ i.remove-item {
   margin-bottom: 1rem;
   font-size: 1rem;
   color: #212529;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 th,
 td {
-  padding: 0.75rem;
+  padding: 1.75px;
   vertical-align: middle;
   text-align: left;
   border-top: 1px solid #dee2e6;
@@ -1134,24 +1134,233 @@ th:last-child,
 td:last-child {
   text-align: left;
 }
-input {
-  width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+
+
+.date-setting {
+  width: 100px;
 }
-input:focus {
-  border-color: #80bdff;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+/* .select-setting {
+  width: 250px !important;
+} */
+
+.input-setting {
+  width: 770px !important;
 }
+
 
 
 /* ****************************************************
 ***************** EMPLOYEE EVENTS => PROFILE PAGE  END ***
+******************************************************/
+
+
+/* ****************************************************
+***************** EMPLOYEE EVENTS => Admin Tab START ***
+******************************************************/
+
+
+.grid-admin-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr 350px;
+  grid-gap: 20px;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.flex-item-admin {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e8f8f;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin: 2px 0;
+    color: #fff;
+    font-size: 12px;
+    align-items: center;
+}
+
+.align-top {
+  margin-top: -16px;
+}
+
+
+.grid-input-wrapper {
+  display: grid;
+  grid-template-columns: 66% 33%;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.grid-input-fx-1 {
+  /* background-color: red; */
+  /* padding: 20px; */
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+}
+.grid-input-fx-2{
+  /* background-color: orangered; */
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.margin-custom {margin: 2px 0;}
+
+.tag-light {
+  height: 20px;
+  width: 100px;
+  background-color: #fff;
+  color: #008080;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.admin__heading {
+  color: #008080;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+.admin-tab-container {
+  width: 90%;
+  margin: 2px auto;
+}
+
+
+.grid-boxes-admin {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  grid-gap: 20px;
+}
+
+.lift-1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  /* background-color: red; */
+}
+.input-lift {
+  display: grid;
+  /* background-color: palevioletred; */
+  width: 100%;
+  grid-template-columns: 20% 1fr;
+  margin: 1px 0;
+}
+
+.life-input-input {
+  height: 20px;
+  border: 1px solid #a3a0a0;
+  outline: none;
+  border-radius: 5px;
+}
+
+.lift-select {
+  height: 20px;
+  border: 1px solid #a3a0a0;
+  outline: none;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.label-lift {
+  font-size: 12px;
+}
+
+
+
+.image__profile {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.image__profile img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #008080;
+  border-radius: 2px;
+  margin-top: 25px;
+}
+
+.lift__profile {
+  display: flex;
+  flex-direction: column;
+}
+.lift__profile img {
+  height: 135px;
+  width: 135px;
+  object-fit: cover;
+  border: 5px solid #008080;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn-profile-lift{
+  background-color: #008080;
+  color: #fff;
+  width: 135px;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  display: flex;
+  font-size: 12px;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+
+}
+
+.no-pad {
+  display: flex;
+    justify-content: space-between;
+    background-color: #1e8f8f;
+    padding: 1px 5px;
+    border-radius: 4px;
+    margin: 3px 0;
+    color: #fff;
+    font-size: 12px
+}
+
+
+.btn-profile-remove {
+  background-color: #008080;
+  color: #fff;
+  padding: 3px 15px;
+  margin-top: 10px;
+  border-radius: 100px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-profile-remove i {
+  background-color: #fff;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  color: #008080;
+  display: flex;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* .grid-admin-box-1 {background-color: palevioletred;}
+.grid-admin-box-2{background-color: goldenrod;} */
+
+/* ****************************************************
+***************** EMPLOYEE EVENTS => Admin Tab ENDS ***
 ******************************************************/

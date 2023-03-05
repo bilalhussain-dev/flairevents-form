@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="admin-tab-container">
+        <div class="grid-admin-head">
+            <div class="grid-admin-content grid-item-admin-1">
+                <div class="flex-item-admin no-padd">
+                    <strong>Prospect ID:	</strong>
+                    <span class="tag-light">107170</span>
+                </div>
+            </div>
+            <div class="grid-admin-content grid-item-admin-2">
+                <div class="flex-item-admin no-padd">
+                    <strong>Start Date:	</strong>
+                    <span class="tag-light">14/06/2022</span>
+                </div>
+            </div>
+            <div class="grid-admin-content grid-item-admin-3">
+                <p class="input-lift-top">
+                    <label for="name" class="label-lift">Status:</label>
+                    <!-- <input class="life-input-input" type="text" id="name" autofocus> -->
+                    <select name="#" id="" class="lift-select">
+                        <option value="@" selected>Employee</option>
+                        <option value="@"></option>
+                    </select>
+                </p>
+            </div>
+        </div>
+        <div class="grid-admin-head">
+            <div class="grid-admin-content grid-item-admin-1">
+                <div class="flex-item-admin no-padd">
+                    <strong>Registered:	</strong>
+                    <span class="tag-light">30/05/2022	</span>
+                </div>
+            </div>
+            <div class="grid-admin-content grid-item-admin-2">
+                <div class="flex-item-admin no-padd">
+                    <strong>End Date:		</strong>
+                    <span class="tag-light">14/06/2022</span>
+                </div>
+            </div>
+            <div class="grid-admin-content grid-item-admin-3">
+                <!-- <div class="select_event-grid align-top">
+                    <label for="selectClietns">Clients:</label>
+                    <select name="#" id="#" class="styled-dates">
+                        <option value="#">Option One</option>
+                        <option value="#">Option Two</option>
+                        <option value="#">Option Three</option>
+                    </select>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Grid Admin Input SEC -->
+        <!-- <div class="grid-input-wrapper">
+            <div class="grid-input-fx grid-input-fx-1">
+                <div class="grid-admin-box grid-admin-box-1">
+                    <div class="hs-input-fx">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="" id="" class="styled-input" placeholder="First Name">
+                    </div>
+                    <div class="hs-input-fx">
+                        <label for="firstName">Last Name:</label>
+                        <input type="text" name="" id="" class="styled-input" placeholder="Last Name">
+                    </div>
+
+                    <div class="hs-input-fx">
+                        <label for="firstName">Address:	</label>
+                        <input type="text" name="" id="" class="styled-input" placeholder="Address">
+                    </div>
+                    <div class="hs-input-fx">
+                        <input type="text" name="" id="" class="styled-input margin-custom" placeholder="Primary Address">
+                    </div>
+                    <div class="hs-input-fx">
+                        <label for="firstName">City:</label>
+                        <input type="text" name="" id="" class="styled-input" placeholder="City">
+                    </div>
+                    <div class="hs-input-fx">
+                        <label for="firstName">Post Code:</label>
+                        <input type="text" name="" id="" class="styled-input" placeholder="Example (BL1 6DH)">
+                    </div>
+
+                    <div class="select_event-grid">
+                        <label for="selectClietns">Coutnry:</label>
+                        <select name="#" id="#" class="styled-dates">
+                            <option value="#">Canada</option>
+                            <option value="#">Option Two</option>
+                            <option value="#">Option Three</option>
+                        </select>
+                    </div>
+                    <div class="hs-input-fx">
+                        <label for="firstName">City of Study:</label>
+                        <input type="text" name="" id="" class="styled-input" placeholder="City of Study">
+                    </div>
+                </div>
+                <div class="grid-admin-box grid-admin-box-2">
+                    <div class="input-dates-fs">
+                        <label for="dateSent">DOB</label>
+                        <input type="date" name="" id="" class="styled-dates">
+                    </div>
+                    <div class="select_event-grid">
+                        <label for="selectClietns">Gender:</label>
+                        <select name="#" id="#" class="styled-dates">
+                            <option value="#">Male</option>
+                            <option value="#">Option Two</option>
+                            <option value="#">Option Three</option>
+                        </select>
+                    </div>
+
+                    <div class="hs-input-fx">
+                        <label for="firstName">Mobile:</label>
+                        <input type="text" name="" id="" class="styled-input" placeholder="Mobile">
+                    </div>
+
+                    <div class="hs-input-fx">
+                        <label for="firstName">Home:</label>
+                        <input type="text" name="" id="" class="styled-input" placeholder="Home">
+                    </div>
+
+                    <div class="hs-input-fx">
+                        <label for="firstName">Emergency#:</label>
+                        <input type="text" name="" id="" class="styled-input" placeholder="Emergency Number">
+                    </div>
+
+                    <div class="hs-input-fx">
+                        <label for="firstName">Emerg. Name:</label>
+                        <input type="text" name="" id="" class="styled-input" placeholder="Name">
+                    </div>
+
+                    <div class="hs-input-fx">
+                        <label for="firstName">Email:</label>
+                        <input type="text" name="" id="" class="styled-input" placeholder="email@example.com">
+                    </div>
+
+                </div>
+            </div>
+            <div class="grid-input-fx grid-input-fx-2">
+                <div class="image__profile">
+                    <img src="./images/no-prospect-photo.png" alt="" class="img">
+                    <a href="#" class="btn-profile-remove">
+                        <span>Reject Photo</span>
+                        <span><i class="fa fa-times"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="grid-boxes-admin">
+            <div class="grid-boxes-admin-lift lift-1">
+                <div class="life-box-grid">
+                    <p class="input-lift">
+                        <label for="name" class="label-lift">First Name: </label>
+                        <input class="life-input-input" type="text" id="name" autofocus>
+                    </p>
+                    <p class="input-lift">
+                        <label for="name" class="label-lift">Last Name: </label>
+                        <input class="life-input-input" type="text" id="name" autofocus>
+                    </p>
+                    <p class="input-lift">
+                        <label for="name" class="label-lift">Address: </label>
+                        <input class="life-input-input" type="text" id="name" autofocus>
+                    </p>
+                    <p class="input-lift">
+                        <label for="name" class="label-lift"></label>
+                        <input class="life-input-input" type="text" id="name" autofocus>
+                    </p>
+                    <p class="input-lift">
+                        <label for="name" class="label-lift">City:</label>
+                        <input class="life-input-input" type="text" id="name" autofocus>
+                    </p>
+                    <p class="input-lift">
+                        <label for="name" class="label-lift">Post Code:</label>
+                        <input class="life-input-input" type="text" id="name" autofocus>
+                    </p>
+                    <p class="input-lift">
+                        <label for="name" class="label-lift">Country:</label>
+                        <!-- <input class="life-input-input" type="text" id="name" autofocus> -->
+                        <select name="#" id="" class="lift-select">
+                            <option value="@">Canada</option>
+                            <option value="@"></option>
+                        </select>
+                    </p>
+                    <p class="input-lift">
+                        <label for="name" class="label-lift">City Of Study:	</label>
+                        <input class="life-input-input" type="text" id="name" autofocus>
+                    </p>
+                </div>
+
+                <div class="life-box-grid">
+
+                    <p class="input-lift">
+                        <label for="name" class="label-lift" >DOB : </label>
+                        <input class="life-input-input" type="date" id="name" autofocus>
+                    </p>
+
+                    <p class="input-lift">
+                        <label for="name" class="label-lift">Gender:</label>
+                        <!-- <input class="life-input-input" type="text" id="name" autofocus> -->
+                        <select name="#" id="" class="lift-select">
+                            <option value="@" selected>Male</option>
+                            <option value="@"></option>
+                        </select>
+                    </p>
+
+                    <p class="input-lift">
+                        <label for="name" class="label-lift" >Mobile: </label>
+                        <input class="life-input-input" type="text" id="name" autofocus>
+                    </p>
+                    <p class="input-lift">
+                        <label for="name" class="label-lift">Home: </label>
+                        <input class="life-input-input" type="text" id="name" autofocus>
+                    </p>
+                    <p class="input-lift">
+                        <label for="name" class="label-lift">Emergency #: </label>
+                        <input class="life-input-input" type="text" id="name" autofocus>
+                    </p>
+                    <p class="input-lift">
+                        <label for="name" class="label-lift">Emerg. Name: </label>
+                        <input class="life-input-input" type="text" id="name" autofocus>
+                    </p>
+                    <p class="input-lift">
+                        <label for="name" class="label-lift">Email: </label>
+                        <input class="life-input-input" type="text" id="name" autofocus>
+                    </p>
+                </div>
+
+            </div>
+            <div class="grid-boxes-admin-lift lift-2">
+                <div class="lift__profile">
+                    <img src="./images/no-prospect-photo.png" alt="" class="img">
+                    <a href="#" class="btn-profile-lift">
+                        <span>Reject Photo</span>
+                        <span><i class="fa fa-times"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
