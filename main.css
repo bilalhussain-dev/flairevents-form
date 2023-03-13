@@ -1840,6 +1840,10 @@ td:last-child {
   background-color: #ae95da;
 }
 
+.text__bg-2 {
+  color: #ae95da;
+}
+
 .header__bg-1{
   background-color: #6BCBB8;
 }
@@ -1898,6 +1902,49 @@ td:last-child {
 }
 
 
+.ref__gird {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.ref__gridn__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+}
+
+.ref__input {
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid #777;
+  color: #777;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.button__ref{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+}
+
+.btn__ref {
+  width: 100%;
+  outline: none;
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  border: 1px solid transparent;
+}
+.ref-1 {
+  border: 1px solid #008080;
+  background-color: transparent;
+  color: #008080;
+}
+
 
 .expain-grid {
   display: grid;
@@ -1940,8 +1987,9 @@ td:last-child {
   position: absolute;
   left: -25px;
   top: 0;
-  background-color: #28cece;
+  background-color: #008080;
   border-radius: 100%;
+  color: #fff;
 
   display: flex;
   align-items: center;
@@ -2029,3 +2077,234 @@ td:last-child {
 /* ****************************************************
 ***************** EMPLOYEE EVENTS => EMPLOYEE Tab ENDS ***
 ******************************************************/
+
+
+
+
+
+
+
+
+
+/* ****************************************************
+***************** CLEITN'S DETAILS PAGE START ***
+******************************************************/
+.clients__detail {
+  width: 95%;
+  margin: 10px auto;
+  font-size: 12px;
+}
+
+.clients__container-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 20px;
+  font-size: 12px;
+}
+
+.client__grid-1 {
+  /* border: 1px solid #eee; */
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
+}
+
+.set__input {
+  margin-top: -20px;
+}
+
+.client__fields-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
+  grid-template-rows: 30% 30%;
+}
+
+.client__fields-grid_2 {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
+  grid-template-rows: 30% 30%;
+}
+
+.client__check--group{
+  margin-top: 21px;
+}
+
+.checkbox-client-flex {
+  width: 100px;
+  display: flex;
+}
+
+
+.check-box-container-check {
+  display: flex;
+}
+
+.set-check-width {
+  width: 130px !important;
+}
+
+
+.group__checkbox-client {
+  display: flex;
+  align-items: center;
+}
+
+
+.group__checkbox-client label {
+  margin-right: 30px;
+}
+
+
+
+.client__fields-grid .field__input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #777;
+  width: 100%;
+}
+
+.expand__input {
+  display: grid;
+  grid-column: 1 / -1;
+}
+
+.client__select-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.client__select-group_2 {
+  display: flex;
+  flex-direction: column;
+}
+.client__select-group_2  select{
+  padding: 5px 10px;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+
+.client__select-group select {
+  padding: 5px 10px;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+
+
+.client__grid-2{
+  /* background-color: blueviolet; */
+}
+
+
+.cleint___profile {
+  display: flex;
+}
+
+.cleint___profile img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.clients__primary-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+  padding: 10px 0;
+}
+
+
+.client__input-component {
+  display: flex;
+  flex-direction: column;
+}
+
+.control-form-component {
+    padding: 5px 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    outline: none;
+}
+
+.clients__primary--sub {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.badge___primary {
+  background-color: #008080;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.date--box-primary, .select--box-primary, .input--box-primary{
+  display: flex;
+  flex-direction: column;
+  margin-top: -11px;
+}
+
+
+
+
+.flex-line {
+  display: flex;
+  flex: 1;
+}
+
+.grid-fill {
+  display: grid;
+  grid-column: 2 / -1;
+}
+
+
+.account__details {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.account__detail--component {
+  display: flex;
+  flex-direction: column;
+}
+
+.select__check--grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.room-top {
+  margin-top: 10px;
+}
+
+.message__box-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.message__box {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ****************************************************
+***************** CLEITN'S DETAILS PAGE ENDS ***
+******************************************************/
+
