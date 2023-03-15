@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="client__field--group expand__input">
-                        <label for="#">Full Email:</label>
+                        <label for="#">Full Address:</label>
                         <input type="text" class="field__input">
                     </div>
 
@@ -54,7 +54,7 @@
                         </select>
                     </div>
                     <div class="client__field--group">
-                        <label for="#">Full Address:</label>
+                        <label for="#">Business Telephone:</label>
                         <input type="text" class="field__input">
                     </div>
 
@@ -131,57 +131,71 @@
             </div>
         </div>
         <div class="divider__content"></div>
-        <div class="clients__primary--sub">
-            <div class="client__primary-box">
-                <div class="badge___primary">T&C/HS	</div>
-            </div>
-            <div class="client__primary-box">
-                <div class="date--box-primary">
-                    <label for="#">Date Sent</label>
-                    <input type="date" name="" id="" class="control-form-component flex-line">
+        <div class="grid-container__clients">
+
+                <div class="client-grid-item client__badge">
+                    <span>T&C/HS</span>
                 </div>
-            </div>
-            <div class="client__primary-box">
-                <div class="date--box-primary">
-                    <label for="#">Date Received</label>
-                    <input type="date" name="" id="" class="control-form-component flex-line">
+                <div class="client-grid-item">
+                    <div class="client__date-group">
+                        <label for="#" class="label__client">Date Sent</label>
+                        <input type="date" name="#" id="" class="client__date--group">
+                    </div>
                 </div>
-            </div>
-            <div class="client__primary-box">
-                <div class="select--box-primary">
-                    <label for="#">Signed by</label>
-                    <select name="#" id="" class="flex-line control-form-component">
-                        <option value="#">Clare Peckham</option>
-                    </select>
+                <div class="client-grid-item">
+                    <div class="client__date-group">
+                        <label for="#" class="label__client">Date Received</label>
+                        <input type="date" name="#" id="" class="client__date--group">
+                    </div>
                 </div>
-            </div>
-            <div class="client__primary-box">
-                <div class="badge___primary">Credit Check</div>
-            </div>
-            <div class="client__primary-box">
-                <div class="date--box-primary">
-                    <label for="#">Date</label>
-                    <input type="date" name="" id="" class="control-form-component flex-line">
+                <div class="client-grid-item">
+                    <div class="client__input-component">
+                        <label for="#">Signed By</label>
+                        <select name="" id="" class="control-form-component">
+                            <option value="">Clare Peckham</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="client__primary-box">
-                <div class="input--box-primary">
-                    <label for="#">Flair HQ</label>
-                    <input type="text" class="control-form-component grid-fill">
+                <div class="client-grid-item"></div>
+                <div class="client-grid-item client__badge">Credit Check</div>
+                <div class="client-grid-item">
+                    <div class="client__date-group">
+                        <label for="#" class="label__client">Date Sent</label>
+                        <input type="date" name="#" id="" class="client__date--group">
+                    </div>
                 </div>
-            </div>
-            <div class="client__primary-box">
-                <div class="input--box-primary">
-                    <label for="#">Credit Check Source	</label>
-                    <input type="text" class="control-form-component grid-fill">
+                <div class="client-grid-item checkItems_grid">
+                    <div class="client__check-group">
+                        <label for="" class="label__client">Check Result</label>
+                        <div class="checkbox-group-secondary">
+                            <label>
+                              <input type="checkbox">
+                              <span>Clear</span>
+                            </label>
+                            <label>
+                              <input type="checkbox">
+                              <span>Concerns</span>
+                            </label>
+                            <label>
+                              <input type="checkbox">
+                              <span>No</span>
+                            </label>
+                          </div>
+                    </div>
                 </div>
-            </div>
+                <div class="client-grid-item expand-grid">
+                    <div class="client__input-group">
+                        <label for="#" class="label__client">Credit Check Source</label>
+                        <input type="text" name="#" id="" class="control-form-component">
+                    </div>
+                </div>
+
         </div>
         <div class="divider__content"></div>
         <div class="account__details">
             <div class="account__detail-box">
                 <div class="account__detail--component">
-                    <label for="#">Contact Name	</label>
+                    <label for="#">Accounts Department	</label>
                     <input type="text" class="control-form-component">
                 </div>
             </div>
@@ -199,15 +213,39 @@
             </div>
             <div class="account__detail-box room-top">
                 <div class="select__check--grid">
-                    <div class="input-check-row">
-                        <div class="checkbox-labled set-check-width">
-                            <div class="lable-text">PO#</div>
-                            <label class="container-check">
-                                <input type="hidden">
-                                <input type="checkbox">
-                                <span class="checkmark-radio checkmark"></span>
-                            </label>
+                    <div class="client__check-group--secondary">
+
+                        <div class="input-check-row">
+                            <div class="checkbox-labled set-check-width">
+                                <div class="lable-text">YES / NO</div>
+                                <label class="container-check">
+                                    <input type="hidden">
+                                    <input type="checkbox">
+                                    <span class="checkmark-radio checkmark"></span>
+                                </label>
+                            </div>
                         </div>
+
+                        <div class="input-check-row">
+                            <div class="checkbox-labled set-check-width">
+                                <div class="lable-text">YES / NO</div>
+                                <label class="container-check">
+                                    <input type="hidden">
+                                    <input type="checkbox">
+                                    <span class="checkmark-radio checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- <div class="checkbox-group-secondary">
+                            <label>
+                              <input type="checkbox">
+                              <span>(YES / NO)</span>
+                            </label>
+                            <label>
+                              <input type="checkbox">
+                              <span>(YES / NO)</span>
+                            </label>
+                        </div> -->
                     </div>
                     <div class="select--box-primary">
                         <label for="#">Pay Terms</label>
@@ -236,11 +274,11 @@
         <div class="message__box--container">
             <div class="message__box-grid">
                 <div class="message__box">
-                    <label for="#">Credit Check Source	</label>
+                    <label for="#">General Notes	</label>
                     <textarea type="text" class="control-form-component" rows="4"></textarea>
                 </div>
                 <div class="message__box">
-                    <label for="#">Credit Check Source	</label>
+                    <label for="#"> Invoice notes	</label>
                     <textarea type="text" class="control-form-component" rows="4"></textarea>
                 </div>
             </div>

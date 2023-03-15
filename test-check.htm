@@ -6,62 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .checkbox-row {
-    display: flex;
-    align-items: center;
-  }
+       .grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
 
-  .checkbox-row label {
-    display: inline-block;
-    vertical-align: middle;
-  }
+.item {
+  background-color: #ddd;
+  padding: 10px;
+  text-align: center;
+}
 
-  .checkbox-row input[type="checkbox"] {
-    vertical-align: middle;
-  }
+.expand {
+  grid-column: 3/ 5; /* expands from column 2 to column 6 */
+}
+
+/* Optional styles for better visibility */
+.item:nth-child(odd) {
+  background-color: #eee;
+}
+
     </style>
 </head>
 <body>
-    <div class="checkbox-row">
-        <label>
-          <input type="checkbox">
-          Checkbox Label 1
-        </label>
-        <label>
-          <input type="checkbox">
-          Checkbox Label 2
-        </label>
-        <label>
-          <input type="checkbox">
-          Checkbox Label
-        </label>
-      </div>
-      <div class="checkbox-row">
-        <label>
-          <input type="checkbox">
-          Checkbox
-        </label>
-        <label>
-          <input type="checkbox">
-          Checkbox Label
-        </label>
-      </div>
+  <div class="grid-container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item expand">9</div>
+  </div>
+
 </body>
 </html>
-
-<div class="client__grid-2">
-  <div class="cleint___profile">
-      <img src="./images/no-prospect-photo.png" alt="">
-  </div>
-</div>
-
-
-<div class="client__check--group">
-  <label for="#">Active</label>
-  <input type="checkbox" name="#" id="" class="check__group">
-</div>
-
-<div class="client__check--group">
-  <label for="#">Next. Y</label>
-  <input type="checkbox" name="#" id="" class="check__group">
-</div>
