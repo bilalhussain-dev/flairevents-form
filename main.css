@@ -2465,7 +2465,7 @@ td:last-child {
 .contracts__wrapper {
   width: 95%;
   margin: 10px auto;
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 .contracts__grid {
@@ -2515,7 +2515,7 @@ td:last-child {
 }
 
 .badge__contact {
-  background-color: #008080;
+  background-color: #6BCBB8;
   color: #fff;
   display: flex;
   align-items: center;
@@ -2526,10 +2526,10 @@ td:last-child {
 }
 
 .contract__circle-badge {
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  color: #008080;
+  height: 25px;
+  width: 25px;
+  background-color: #008080;
+  color: #fff;
 
   display: flex;
   align-items: center;
@@ -2614,6 +2614,7 @@ td:last-child {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-gap: 20px;
+  font-size: 12px !important;
 }
 
 .item__1 {
@@ -2703,7 +2704,7 @@ td:last-child {
 }
 
 .job__find--box button {
-  background-color: #008080;
+  background-color: #6BCBB8;
   padding: 10px 20px;
   border: 1px solid transparent;
   color: #fff;
@@ -2748,13 +2749,15 @@ td:last-child {
   display: grid;
   grid-template-columns: repeat(8,1fr);
   grid-gap: 10px;
-  margin-top: 10px;
+  margin-top: 3px;
+}
+.checkbox-contract-v2 label {
+  font-weight: bold;
 }
 
 .form-group-v2 {
   display: flex;
-  align-items:center;
-  margin-bottom: 15px;
+  align-items:flex-end;
 }
 
 .form-group-v2 .input-v2 {
@@ -2769,6 +2772,9 @@ td:last-child {
 .form-group-v2 .label-v2 {
   position: relative;
   cursor: pointer;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .form-group-v2 .label-v2:before {
@@ -2800,6 +2806,9 @@ td:last-child {
 
 
 
+.use-bold-text {
+  font-weight: bold;
+}
 
 
 
