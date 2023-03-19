@@ -45,7 +45,10 @@
                 <div class="client__fields-grid">
                     <div class="client__field--group">
                         <label for="#">Client:</label>
-                        <input type="text" class="field__input">
+                        <div class="client__field--group-badge">
+                            <span class="badge__title">Projet ID</span>
+                            <span class="badge__detail">9299</span>
+                        </div>
                     </div>
                     <div class="client__select-group_2">
                         <label for="#">Status:</label>
@@ -169,15 +172,24 @@
                         <label for="" class="label__client">Check Result</label>
                         <div class="checkbox-group-secondary">
                             <label>
-                              <input type="checkbox">
+                             <div class="form-group-v2">
+                                <input type="checkbox" id="clear" class="input-v2">
+                                <label for="clear" class="label-v2 use-bold-text"></label>
+                            </div>
                               <span>Clear</span>
                             </label>
                             <label>
-                              <input type="checkbox">
+                             <div class="form-group-v2">
+                                <input type="checkbox" id="concerns" class="input-v2">
+                                <label for="concerns" class="label-v2 use-bold-text"></label>
+                            </div>
                               <span>Concerns</span>
                             </label>
                             <label>
-                              <input type="checkbox">
+                             <div class="form-group-v2">
+                                <input type="checkbox" id="no" class="input-v2">
+                                <label for="no" class="label-v2 use-bold-text"></label>
+                            </div>
                               <span>No</span>
                             </label>
                           </div>
@@ -215,25 +227,29 @@
                 <div class="select__check--grid">
                     <div class="client__check-group--secondary">
 
-                        <div class="input-check-row">
+                        <div class="input-check-row pos-flex">
+                            <span class="position-text">#PO Required</span>
                             <div class="checkbox-labled set-check-width">
-                                <div class="lable-text">YES / NO</div>
-                                <label class="container-check">
-                                    <input type="hidden">
-                                    <input type="checkbox">
-                                    <span class="checkmark-radio checkmark"></span>
-                                </label>
+                                <div class="lable-text">
+                                    <strong>YES / NO</strong>
+                                </div>
+                                <div class="form-group-v2">
+                                    <input type="checkbox" id="yes" class="input-v2" checked>
+                                    <label for="yes" class="label-v2 use-bold-text"></label>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="input-check-row">
+                        <div class="input-check-row pos-flex">
+                            <span class="position-text"> &nbsp; Deposit</span>
                             <div class="checkbox-labled set-check-width">
-                                <div class="lable-text">YES / NO</div>
-                                <label class="container-check">
-                                    <input type="hidden">
-                                    <input type="checkbox">
-                                    <span class="checkmark-radio checkmark"></span>
-                                </label>
+                                <div class="lable-text">
+                                    <strong>YES / NO</strong>
+                                </div>
+                                <div class="form-group-v2">
+                                    <input type="checkbox" id="yesNo" class="input-v2" checked>
+                                    <label for="yesNo" class="label-v2 use-bold-text"></label>
+                                </div>
                             </div>
                         </div>
                         <!-- <div class="checkbox-group-secondary">
