@@ -2130,9 +2130,10 @@ td:last-child {
 ******************************************************/
 
 .clients__detail {
-  width: 70%;
+  width: 769px;
   font-size: 12px;
   border-right: 1px solid black;
+  max-width: 100%;
 }
 
 .clients__container-grid {
