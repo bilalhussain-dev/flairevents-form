@@ -2130,22 +2130,21 @@ td:last-child {
 ******************************************************/
 
 .clients__detail {
-  width: 95%;
-  margin: 10px auto;
+  width: 70%;
   font-size: 12px;
+  border-right: 1px solid black;
 }
 
 .clients__container-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: 70% 30%;
-  grid-gap: 20px;
+  grid-template-columns: 80% 20%;
   font-size: 12px;
 }
 
 .client__grid-1 {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: 1fr 2fr;
   grid-gap: 10px;
 }
 
@@ -2328,7 +2327,7 @@ td:last-child {
 .account__details {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
   width: 100%;
   margin: 20px 0;
 }
@@ -2378,7 +2377,7 @@ td:last-child {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto auto;
-  grid-gap: 20px;
+  grid-gap: 10px;
   width: 100%;
 
   margin: 20px 0;
