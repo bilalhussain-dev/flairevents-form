@@ -2910,13 +2910,10 @@ td:last-child {
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
-
-
 /* Custom check box v2 */
 
 
 /* Custom check box V3 */
-
 .checkbox-contract-v3 label {
   font-weight: bold;
 }
@@ -2969,14 +2966,11 @@ td:last-child {
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
-
 /* Custom check box 33 */
 
 
 
 .use-bold-text { font-weight: bold; }
-
-
 
 .database-check-group {
   display: flex;
@@ -2991,9 +2985,6 @@ td:last-child {
 .label-check-email {
   margin-right: 20px;
 }
-
-
-
 
 
 /* ****************************************************
