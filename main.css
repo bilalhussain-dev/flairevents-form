@@ -2130,10 +2130,11 @@ td:last-child {
 ******************************************************/
 
 .clients__detail {
-  width: 769px;
+  width: 800px;
   font-size: 12px;
   border-right: 1px solid black;
   max-width: 100%;
+  margin: 3px 5px;
 }
 
 .clients__container-grid {
@@ -2341,7 +2342,7 @@ td:last-child {
 .select__check--grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 
 .client__check-group {
@@ -2910,6 +2911,13 @@ td:last-child {
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
+
+
+.form-group-v2 .label-v2:hover:before {
+  background-color:  #ccc;;
+}
+
+
 /* Custom check box v2 */
 
 
