@@ -132,10 +132,11 @@
                 <div class="card__screening card__check">
                     <div class="card__header header__bg-2">Big Teams</div>
                     <div class="card__content check__center">
-                        <div class="form-group-v2">
-                            <input type="checkbox" id="home" class="input-v2">
-                            <label for="home" class="label-v2"></label>
-                        </div>
+                        <label class="container-check">
+                            <input type="hidden" name="prospect[is_clean]" id="prospect_is_clean" value="0" class="input-v2">
+                            <input type="checkbox" name="prospect[is_clean]" id="prospect_is_clean" value="{:class=>&quot;input-v2&quot;}">
+                            <span class="checkmark-radio checkmark"></span>
+                         </label>
                     </div>
                 </div>
             </div>

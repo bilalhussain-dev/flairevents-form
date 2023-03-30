@@ -2909,14 +2909,21 @@ td:last-child {
   left: 8px;
   width: 8px;
   height: 14px;
-  border: solid #999;
+  border: solid #008080;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
 
 
+
 .form-group-v2 .label-v2:hover:before {
   background-color:  #ccc;;
+}
+
+
+.form-group-v2 .input-v2:checked + .label-v2:before {
+  background-color: rgba(0,128,128,0.4); /* change the background color of the checkbox when checked */
+
 }
 
 
